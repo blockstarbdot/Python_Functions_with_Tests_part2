@@ -26,7 +26,10 @@ Your solutions must pass the automated test runner.
 #   - Do NOT print anything.
 #
 def is_even(num: int) -> bool:
-    pass
+    if num % 2 == 0: # the number is divisible by 2
+        return True 
+    else:
+        return False
 
 
 # -------------------------------------------------
@@ -50,7 +53,14 @@ def is_even(num: int) -> bool:
 #   - Do NOT print anything.
 #
 def count_vowels(s: str) -> int:
-    pass
+    count = 0 
+    vowels = ["a","e","i","o","u"]
+
+    for char in s:
+        if char.lower() in vowels:
+            count += 1
+
+    return count 
 
 
 # -------------------------------------------------
@@ -70,7 +80,11 @@ def count_vowels(s: str) -> int:
 #   - Do NOT use built-in reverse() method.
 #
 def reverse_string(s: str) -> str:
-    pass
+    output = ""
+    for char in s:
+        output = char + output
+
+    return output
 
 
 # -------------------------------------------------
@@ -90,4 +104,4 @@ def reverse_string(s: str) -> str:
 #   - Must return the largest value.
 #
 def max_of_three(a: int, b: int, c: int) -> int:
-    pass
+    pass  
